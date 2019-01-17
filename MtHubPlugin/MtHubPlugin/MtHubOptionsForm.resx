@@ -1,0 +1,502 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tbApiToken.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="tbApiToken.Location" type="System.Drawing.Point, System.Drawing">
+    <value>137, 6</value>
+  </data>
+  <data name="tbApiToken.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 6, 4, 4</value>
+  </data>
+  <data name="tbApiToken.Size" type="System.Drawing.Size, System.Drawing">
+    <value>440, 22</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tbApiToken.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tbApiToken.Name" xml:space="preserve">
+    <value>tbApiToken</value>
+  </data>
+  <data name="&gt;&gt;tbApiToken.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbApiToken.Parent" xml:space="preserve">
+    <value>tlpApiToken</value>
+  </data>
+  <data name="&gt;&gt;tbApiToken.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblApiToken.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblApiToken.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="lblApiToken.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblApiToken.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 0</value>
+  </data>
+  <data name="lblApiToken.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="lblApiToken.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 32</value>
+  </data>
+  <data name="lblApiToken.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblApiToken.Text" xml:space="preserve">
+    <value>API Token</value>
+  </data>
+  <data name="lblApiToken.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;lblApiToken.Name" xml:space="preserve">
+    <value>lblApiToken</value>
+  </data>
+  <data name="&gt;&gt;lblApiToken.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblApiToken.Parent" xml:space="preserve">
+    <value>tlpApiToken</value>
+  </data>
+  <data name="&gt;&gt;lblApiToken.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="bw.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="tlpMain.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tlpMain.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="tlpMain.ColumnCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanel1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tableLayoutPanel1.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="lblValidateToken.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblValidateToken.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="lblValidateToken.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblValidateToken.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 0</value>
+  </data>
+  <data name="lblValidateToken.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="lblValidateToken.Size" type="System.Drawing.Size, System.Drawing">
+    <value>449, 38</value>
+  </data>
+  <data name="lblValidateToken.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="lblValidateToken.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;lblValidateToken.Name" xml:space="preserve">
+    <value>lblValidateToken</value>
+  </data>
+  <data name="&gt;&gt;lblValidateToken.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblValidateToken.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;lblValidateToken.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnOK.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnOK.Location" type="System.Drawing.Point, System.Drawing">
+    <value>461, 4</value>
+  </data>
+  <data name="btnOK.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="btnOK.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 30</value>
+  </data>
+  <data name="btnOK.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnOK.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="&gt;&gt;btnOK.Name" xml:space="preserve">
+    <value>btnOK</value>
+  </data>
+  <data name="&gt;&gt;btnOK.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnOK.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;btnOK.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 49</value>
+  </data>
+  <data name="tableLayoutPanel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tableLayoutPanel1.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>581, 38</value>
+  </data>
+  <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Name" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Parent" xml:space="preserve">
+    <value>tlpMain</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="lblValidateToken" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="btnOK" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100,AutoSize,0,AutoSize,0" /&gt;&lt;Rows Styles="AutoSize,0" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="tlpApiToken.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tlpApiToken.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="tlpApiToken.ColumnCount" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="tlpApiToken.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tlpApiToken.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 9</value>
+  </data>
+  <data name="tlpApiToken.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tlpApiToken.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tlpApiToken.Size" type="System.Drawing.Size, System.Drawing">
+    <value>581, 32</value>
+  </data>
+  <data name="tlpApiToken.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tlpApiToken.Name" xml:space="preserve">
+    <value>tlpApiToken</value>
+  </data>
+  <data name="&gt;&gt;tlpApiToken.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tlpApiToken.Parent" xml:space="preserve">
+    <value>tlpMain</value>
+  </data>
+  <data name="&gt;&gt;tlpApiToken.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tlpApiToken.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="lblApiToken" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tbApiToken" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,133,Percent,100,AutoSize,0,AutoSize,0" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="tlpMain.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="tlpMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tlpMain.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tlpMain.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="tlpMain.RowCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tlpMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>599, 96</value>
+  </data>
+  <data name="tlpMain.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;tlpMain.Name" xml:space="preserve">
+    <value>tlpMain</value>
+  </data>
+  <data name="&gt;&gt;tlpMain.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tlpMain.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tlpMain.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tlpMain.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="tableLayoutPanel1" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tlpApiToken" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="AutoSize,0,AutoSize,0,Absolute,20,Absolute,20,Absolute,20,Absolute,20,Absolute,20,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 16</value>
+  </data>
+  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>599, 103</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAABIXAAASFwAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeHn4AHh5+MB4e
+        fsseHn7xHh5+8R4efsseHn4wHh5+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHh5+AB4e
+        fgUeHn6jHh5+1R4efk0eHn5NHh5+1R4efqUeHn4GHh5+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHh5+AB4e
+        fgAeHn4AHh5+Kh4eftgeHn6VHh5+AB4efgAeHn6UHh5+2R4efiweHn4AHh5+AB4efgAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHh5+AB4e
+        fgAeHn4AHh5+GB4efnMeHn7VHh5+8R4eftoeHn5eHh5+Xh4eftoeHn7yHh5+1h4efnMeHn4aHh5+AB4e
+        fgAeHn4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeHn4AHh5+AB4efgAeHn4AHh5+AB4e
+        fgAeHn4AHh5+Ex4efmUeHn7LHh5+5B4efpIeHn5IHh5+px4efu4eHn7uHh5+px4efkgeHn6SHh5+5B4e
+        fs0eHn5lHh5+Ex4efgAeHn4AHh5+AB4efgAeHn4AHh5+AB4efgAAAAAAHh5+AB4efgAeHn4CHh5+AR4e
+        fgAeHn4AHh5+DR4eflgeHn7DHh5+5h4efqAeHn42Hh5+Ax4efgAeHn4LHh5+uB4efrgeHn4LHh5+AB4e
+        fgMeHn42Hh5+oB4efuYeHn7DHh5+WR4efg4eHn4AHh5+AB4efgEeHn4CHh5+AB4efgAeHn4SHh5+aB4e
+        fqkeHn6dHh5+Sh4efkseHn61Hh5+6R4efq4eHn5BHh5+BR4efgAeHn4AHh5+AB4efgMeHn6xHh5+sR4e
+        fgMeHn4AHh5+AB4efgAeHn4FHh5+QR4efq4eHn7qHh5+tx4efkseHn5KHh5+nR4efqkeHn5qHh5+Eh4e
+        fqIeHn7oHh5+ph4efroeHn7tHh5+6x4efr4eHn5UHh5+ER4efgQeHn4GHh5+Bx4efgceHn4HHh5+Ch4e
+        frIeHn6yHh5+Ch4efgceHn4HHh5+Bx4efgYeHn4EHh5+ER4eflQeHn68Hh5+6x4efu0eHn66Hh5+ph4e
+        fugeHn6iHh5++x4efoMeHn4CHh5+ER4efsEeHn7yHh5+vh4efrMeHn61Hh5+tR4efrUeHn61Hh5+tR4e
+        frUeHn62Hh5+6B4efugeHn62Hh5+tR4efrUeHn61Hh5+tR4efrUeHn61Hh5+sx4efr0eHn7yHh5+wR4e
+        fhEeHn4CHh5+hB4efvseHn74Hh5+lB4efg4eHn4iHh5+yx4efuseHn6eHh5+hh4efoYeHn6IHh5+iB4e
+        fogeHn6IHh5+iB4efokeHn7ZHh5+2R4efokeHn6IHh5+iB4efogeHn6IHh5+iB4efoYeHn6GHh5+nR4e
+        fuseHn7LHh5+Ix4efg0eHn6SHh5++B4efokeHn7pHh5+wR4eftMeHn71Hh5+4x4efs4eHn5pHh5+FR4e
+        fgAeHn4AHh5+AB4efgAeHn4AHh5+AR4efrAeHn6wHh5+AR4efgAeHn4AHh5+AB4efgAeHn4AHh5+Ex4e
+        fmgeHn7LHh5+4x4efvUeHn7VHh5+wR4efuoeHn6MHh5+CB4eflMeHn7iHh5+2h4efugeHn6GHh5+mB4e
+        fuceHn7JHh5+YB4efhEeHn4AHh5+AB4efgAeHn4EHh5+sR4efrEeHn4EHh5+AB4efgAeHn4AHh5+ER4e
+        fl4eHn7HHh5+5h4efpgeHn6JHh5+7B4efuAeHn7iHh5+VB4efgoeHn4AHh5+DR4efsceHn6SHh5+pR4e
+        ftEeHn4mHh5+PB4efqYeHn7pHh5+vx4eflUeHn4MHh5+AB4efgEeHn6wHh5+sB4efgEeHn4AHh5+Cx4e
+        flEeHn6+Hh5+6B4efqYeHn48Hh5+Jx4eftMeHn6xHh5+lx4efsceHn4NHh5+AAAAAAAeHn4QHh5+yR4e
+        fokeHn4tHh5+4B4efpQeHn4DHh5+Bx4efkceHn6xHh5+6h4efrMeHn5NHh5+Yx4efuEeHn7hHh5+Yx4e
+        fkoeHn6yHh5+6R4efrEeHn5HHh5+Bx4efgMeHn6WHh5+6B4efjceHn6JHh5+yR4efhAAAAAAAAAAAB4e
+        fhAeHn7JHh5+jB4efgAeHn5rHh5+7B4efk0eHn4AHh5+AB4efgseHn5RHh5+vB4efvAeHn7tHh5+px4e
+        fqceHn7sHh5+7x4efrweHn5RHh5+Cx4efgAeHn4AHh5+UB4efvAeHn58Hh5+Ah4efoweHn7JHh5+EAAA
+        AAAAAAAAHh5+EB4efskeHn6MHh5+AB4efg4eHn6zHh5+yh4efhseHn4AHh5+AB4efgAeHn4ZHh5+0R4e
+        fqQeHn4GHh5+BR4efqEeHn7RHh5+GR4efgAeHn4AHh5+AB4efhseHn7MHh5+wR4efhUeHn4AHh5+jB4e
+        fskeHn4QAAAAAAAAAAAeHn4QHh5+yR4efowAAAAAHh5+AB4efjUeHn7kHh5+iR4efgQeHn4AHh5+AB4e
+        fjMeHn7bHh5+sx4efhceHn4XHh5+tB4eftseHn4zHh5+AR4efgAeHn4EHh5+ix4efuseHn5CHh5+AAAA
+        AAAeHn6MHh5+yR4efhAAAAAAAAAAAB4efhAeHn7JHh5+jAAAAAAeHn4AHh5+Ah4efnceHn7qHh5+RR4e
+        fiIeHn6EHh5+3h4eftoeHn7kHh5+zh4efs4eHn7kHh5+2h4eft4eHn6HHh5+Ix4efkceHn7tHh5+hh4e
+        fgMeHn4AAAAAAB4efoweHn7JHh5+EAAAAAAAAAAAHh5+EB4efskeHn6MHh5+AB4efgAeHn4AHh5+ER4e
+        fsEeHn7ZHh5+1B4eft4eHn5/Hh5+Ix4efjoeHn7RHh5+0R4efjoeHn4jHh5+fx4eft4eHn7WHh5+3B4e
+        fsoeHn4YHh5+AB4efgAeHn4AHh5+jB4efskeHn4QAAAAAB4efgAeHn4OHh5+yR4efoweHn4AHh5+AB4e
+        fhUeHn5sHh5+2x4efv8eHn7FHh5+LB4efgAeHn4AHh5+AR4efrAeHn6wHh5+AR4efgAeHn4AHh5+LB4e
+        fsUeHn7/Hh5+3R4efmweHn4WHh5+AB4efgAeHn6MHh5+yR4efg4eHn4AHh5+FR4efnweHn7vHh5+0x4e
+        flceHn5dHh5+xh4efuYeHn6WHh5+lh4efuAeHn43Hh5+AAAAAAAeHn4EHh5+sR4efrEeHn4EAAAAAB4e
+        fgAeHn43Hh5+4h4efqYeHn6XHh5+5h4efsgeHn5fHh5+WR4eftMeHn7vHh5+gB4efhkeHn6oHh5+5R4e
+        fpUeHn6tHh5+8B4efuseHn6kHh5+PB4efgMeHn4XHh5+xR4efrgeHn4QHh5+AB4efgQeHn6xHh5+sR4e
+        fgQeHn4AHh5+EB4efrceHn7THh5+IB4efgMeHn48Hh5+pB4efuweHn7xHh5+rR4efpUeHn7mHh5+rh4e
+        fv0eHn59Hh5+AB4efg0eHn7CHh5+th4efgceHn4AHh5+AB4efgAeHn5JHh5+7B4efnAeHn4BHh5+BB4e
+        frEeHn6xHh5+BB4efgEeHn5wHh5+8h4eflkeHn4AHh5+AB4efgAeHn4HHh5+th4efsIeHn4NHh5+AB4e
+        fnweHn7+Hh5+9h4efpUeHn4SHh5+KB4eftMeHn7JHh5+Jh4efgAeHn4AHh5+AB4efgUeHn6QHh5+4B4e
+        fjAeHn4BHh5+sR4efrEeHn4BHh5+MB4efuEeHn6fHh5+CB4efgAeHn4AHh5+AB4efiYeHn7JHh5+0x4e
+        figeHn4SHh5+lR4efvYeHn6AHh5+5B4efs0eHn7YHh5+3R4eftweHn7YHh5+eh4efh0eHn4AHh5+AB4e
+        fh4eHn7PHh5+rR4efg8eHn6wHh5+sB4efg4eHn6qHh5+2x4efigeHn4AHh5+AB4efh0eHn56Hh5+2B4e
+        ftweHn7dHh5+2B4efs0eHn7kHh5+gB4efgUeHn49Hh5+dR4efmoeHn4oHh5+KB4efoseHn7hHh5+0x4e
+        fm4eHn4WHh5+AB4eflMeHn7tHh5+Zx4efq4eHn6uHh5+Zh4efvEeHn5kHh5+AB4efhYeHn5tHh5+0R4e
+        fuIeHn6LHh5+KB4efigeHn5qHh5+dR4efj0eHn4FHh5+AB4efgAeHn4AHh5+AB4efgAeHn4AHh5+Ah4e
+        fjAeHn6ZHh5+5h4efsceHn5gHh5+Fh4efpceHn7YHh5+0R4eftEeHn7ZHh5+pR4efhkeHn5gHh5+yB4e
+        fuceHn6ZHh5+Mh4efgIeHn4AHh5+AB4efgAeHn4AHh5+AB4efgAAAAAAHh5+AB4efgAeHn4AAAAAAB4e
+        fgAeHn4AHh5+AB4efgUeHn47Hh5+pR4efukeHn68Hh5+jB4efvUeHn7qHh5+6R4efvgeHn6UHh5+uR4e
+        fukeHn6mHh5+PR4efgUeHn4AHh5+AB4efgAAAAAAHh5+AB4efgAeHn4AAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAHh5+AB4efgAeHn4HHh5+Rx4efrQeHn74Hh5+yR4efjgeHn41Hh5+xh4e
+        fvceHn60Hh5+Rx4efgceHn4AHh5+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHh5+AB4efgAeHn4AHh5+Fx4eftAeHn6YHh5+AB4e
+        fgAeHn6XHh5+0B4efhceHn4AHh5+AB4efgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4efgAeHn4EHh5+jh4e
+        fuQeHn5+Hh5+fh4efuQeHn6OHh5+BB4efgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4e
+        fgAeHn4YHh5+nR4efukeHn7pHh5+nR4efhgeHn4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAA//gf///wD///8Y///8AD//8AAP/MBCAzABw4AAAAAAAAAAAAAAAAAAB8
+        PgAAHDgAgAQgAYAAAAGIwAMBiHAOEYwwBDGMAAAxjgAAcYwMMDEADDAAAAQgACHAA4QBwAOAAGAGAAAQ
+        CAD8AAA//wAA///AA///8Y////AP///4H/8=
+</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>614, 112</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>MT-Hub Connector Settings</value>
+  </data>
+  <data name="&gt;&gt;bw.Name" xml:space="preserve">
+    <value>bw</value>
+  </data>
+  <data name="&gt;&gt;bw.Type" xml:space="preserve">
+    <value>System.ComponentModel.BackgroundWorker, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MtHubOptionsForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>
