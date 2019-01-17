@@ -1,28 +1,18 @@
-﻿using System;
+﻿using Kilgray.Utils;
+using MemoQ.MTInterfaces;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
-using Kilgray.Utils;
-using MemoQ.MTInterfaces;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 
 namespace MtHubPlugin
 {
     internal class MtHubServiceHelper
     {
-        public const string ApiStatusOffline = "offline";
-
-        public const string ApiStatusInitialising = "initialising";
-
-        public const string ApiStatusRunning = "running";
-
-        public const string ApiStatusTerminating = "terminating";
-
-        public const string OriginId = "8";
-
         public const string BaseUrl = "https://app.mt-hub.eu/api/";
 
         private const int TimeOut = 120000;
@@ -37,7 +27,7 @@ namespace MtHubPlugin
         /// </summary>
         private MtHubServiceHelper()
         {
-            ServicePointManager.SecurityProtocol |= (SecurityProtocolType) 3072;
+            ServicePointManager.SecurityProtocol |= (SecurityProtocolType)3072;
         }
 
         /// <summary>
@@ -58,7 +48,7 @@ namespace MtHubPlugin
         /// <returns>The translated string.</returns>
         public static string Translate(MtHubOptions options, string input, string srcLangCode, string trgLangCode)
         {
-            var inputList = new List<string> {input};
+            var inputList = new List<string> { input };
 
             var translations = BatchTranslate(options, inputList, srcLangCode, trgLangCode);
             var translation = translations.First();
@@ -80,16 +70,20 @@ namespace MtHubPlugin
             var inputDictionary = new Dictionary<string, string>();
             for (var i = 0; i < input.Count; i++)
             {
+                //var inputTemp = input[i].Replace("&", "_amp;; ");
                 var inputTemp = input[i];
                 inputDictionary.Add(i.ToString(), HttpUtility.UrlEncode(HttpUtility.UrlEncode(inputTemp)));
             }
 
             const string sUrl = BaseUrl + "translate";
             var json = string.Empty;
+
             json = DoPostRequest(sUrl, inputDictionary, options, srcLangCode, trgLangCode);
 
             using (var reader = new JsonTextReader(new StringReader(json)))
             {
+                var test = reader.ToString();
+
                 var translations = new List<string>();
                 while (reader.Read())
                     if (reader.TokenType == JsonToken.PropertyName)
@@ -99,14 +93,23 @@ namespace MtHubPlugin
                         }
                         else if (reader.Value.ToString() == "message")
                         {
+
+                            if (reader.TokenType == JsonToken.PropertyName)
+                            {
+                                throw new Exception(reader.ReadAsString());
+                            }
+
                             reader.Read();
                             if (reader.TokenType == JsonToken.StartObject)
                             {
+
                                 JObject obj = JObject.Load(reader);
 
                                 throw new Exception(obj.ToString());
                             }
                         }
+                for (var i = 0; i < translations.Count; i++)
+                    translations[i] = translations[i].Replace("&amp;;", "&");
 
                 return translations;
             }
@@ -120,7 +123,6 @@ namespace MtHubPlugin
         /// <returns></returns>
         public static bool IsLanguagePairSupported(LanguagePairSupportedParams args)
         {
-
             var options = new MtHubOptions(args.PluginSettings);
             var apiToken = options.SecureSettings.ApiToken;
             var src = LanguageData.GetIsoCode2LetterFromIsoCode3Letter(args.SourceLangCode);
@@ -194,14 +196,13 @@ namespace MtHubPlugin
             trgLangCode = LanguageData.GetIsoCode2LetterFromIsoCode3Letter(trgLangCode);
             postData += "&source=" + srcLangCode + "&target=" + trgLangCode;
 
-            // if the input is not empty add the parameters
+            // if the input is not empty add the parameters (count())
             if (input != null)
                 foreach (var parameterKeyValuePair in input)
                 {
                     var parameterValue = parameterKeyValuePair.Value.Replace("&", "%2526");
                     postData += "&segments[" + parameterKeyValuePair.Key + "]=" + parameterValue;
                 }
-
 
             var byteArray = Encoding.UTF8.GetBytes(postData);
             request.ContentType = "application/x-www-form-urlencoded";

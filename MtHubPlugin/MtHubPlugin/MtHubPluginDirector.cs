@@ -99,7 +99,7 @@ namespace MtHubPlugin
         /// </summary>
         public override string CopyrightText
         {
-            get { return "Copyright (C) 2007 Free Software Foundation, Inc."; }
+            get { return DateTime.Now.Year.ToString(); }
         }
 
         /// <summary>
@@ -133,6 +133,7 @@ namespace MtHubPlugin
         /// </summary>
         public override bool IsLanguagePairSupported(LanguagePairSupportedParams args)
         {
+
             return MtHubServiceHelper.IsLanguagePairSupported(args);
         }
 
@@ -141,6 +142,7 @@ namespace MtHubPlugin
         /// </summary>
         public override IEngine2 CreateEngine(CreateEngineParams args)
         {
+
             return new MtHubEngine(args.SourceLangCode, args.TargetLangCode,
                 new MtHubOptions(args.PluginSettings));
         }
@@ -150,6 +152,7 @@ namespace MtHubPlugin
         /// </summary>
         public override PluginSettings EditOptions(IWin32Window parentForm, PluginSettings settings)
         {
+
             using (var form = new MtHubOptionsForm { Options = new MtHubOptions(settings) })
             {
                 if (form.ShowDialog(parentForm) == DialogResult.OK)
