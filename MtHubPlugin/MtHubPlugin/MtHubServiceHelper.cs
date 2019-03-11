@@ -70,9 +70,7 @@ namespace MtHubPlugin
             var inputDictionary = new Dictionary<string, string>();
             for (var i = 0; i < input.Count; i++)
             {
-                //var inputTemp = input[i].Replace("&", "_amp;; ");
-                var inputTemp = input[i];
-                inputDictionary.Add(i.ToString(), HttpUtility.UrlEncode(HttpUtility.UrlEncode(inputTemp)));
+                inputDictionary.Add(i.ToString(), HttpUtility.UrlEncode(HttpUtility.UrlEncode(input[i])));
             }
 
             const string sUrl = BaseUrl + "translate";
@@ -108,8 +106,6 @@ namespace MtHubPlugin
                                 throw new Exception(obj.ToString());
                             }
                         }
-                for (var i = 0; i < translations.Count; i++)
-                    translations[i] = translations[i].Replace("&amp;;", "&");
 
                 return translations;
             }
